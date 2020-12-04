@@ -1,7 +1,7 @@
 
 import './App.css';
 import Timer from './timer.jsx'
-import logo from "./logo.svg"
+import logo from "./logo.png"
 
 function App() {
   return (<div className="App">
