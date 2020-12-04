@@ -3,9 +3,9 @@ import './timer.css';
 
 export default class Timer extends Component {
     state = {
-        hour:0,
-        minutes: 0 ,
-        seconds: 5,
+        hour:23,
+        minutes: 30 ,
+        seconds: 10,
     }
 
     componentDidMount() {
