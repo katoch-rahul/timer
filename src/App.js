@@ -1,19 +1,23 @@
+import React, { Component } from 'react';
+import timer from './timer.js';
+import logo from './logo.png';
+import github from './github.png';
 
-import './App.css';
-import Timer from './timer.jsx'
-import logo from "./logo.png"
-
-function App() {
-  return (<div className="App">
-  <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
-    <p>
-      <Timer></Timer>
-    </p>
-    
-  </header>
-</div>
-  );
+class App extends Component {
+  render() {
+    const currentDate = new Date();
+    const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
+    return (
+      <div className="App">         
+        
+          
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />            
+        
+        </div>   
+      </div>
+    );
+  }
 }
 
 export default App;
